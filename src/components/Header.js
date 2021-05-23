@@ -17,10 +17,10 @@ export const Header = () => {
                             <Link to="/watched">Watched</Link>
                         </li>
                         <li>
-                            <Link to="/addmovie">Add Movie</Link>
+                            <Link to="/addmovie" className="btn">+ Movie</Link>
                         </li>
                         <li>
-                            <Link to="/addshow">Add Show</Link>
+                            <Link to="/addshow" className="btn">+ Show</Link>
                         </li>
                     </ul>
                 </div>
