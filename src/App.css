@@ -32,6 +32,17 @@ body {
   line-height: 1.1;
 }
 
+.btn:hover {
+  background-color: #1aa762;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
 /*============HEADER============*/
 header {
   background-color: var(--primary);
