@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ResultCardShow } from "./ResultCardShow";
 
 export const AddShow = () => {
   const [query, setQuery] = useState("");
@@ -37,7 +38,9 @@ export const AddShow = () => {
           {results.length > 0 && (
             <ul className="results">
               {results.map((show) => (
-                <li key={show.id}>{show.name}</li>
+                <li key={show.id}>
+                  <ResultCardShow show={show} />
+                </li>
               ))}
             </ul>
           )}

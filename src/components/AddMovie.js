@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ResultCardMovie } from "./ResultCardMovie";
 
 export const AddMovie = () => {
   const [query, setQuery] = useState("");
@@ -37,7 +38,9 @@ export const AddMovie = () => {
           {results.length > 0 && (
             <ul className="results">
               {results.map((movie) => (
-                <li key={movie.id}>{movie.title}</li>
+                <li key={movie.id}>
+                  <ResultCardMovie movie={movie} />
+                </li>
               ))}
             </ul>
           )}

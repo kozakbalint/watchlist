@@ -1,4 +1,5 @@
 ### To Do`s
+
 [ ] Watchlist Page
 [ ] Watched Page
-[ ] Result cards
+[ x ] Result cards
