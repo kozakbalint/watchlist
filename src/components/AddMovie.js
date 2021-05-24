@@ -34,7 +34,7 @@ export const AddMovie = () => {
                     {results.length > 0 && (
                         <ul className="results">
                             {results.map(movie => (
-                                <li>
+                                <li key={movie.id}>
                                     {movie.title}
                                 </li>
                             ))}
